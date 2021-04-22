@@ -10,7 +10,7 @@ class Setting {
     username: String;
 
     @Column()
-    chat: String;
+    chat: boolean;
 
     @CreateDateColumn()
     created_at: Date;
