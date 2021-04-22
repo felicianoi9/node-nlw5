@@ -2,7 +2,7 @@ import { getCustomRepository } from "typeorm"
 import { MessagesRepository } from "../repositories/MessagesRepository"
 
 interface IMessagesService {
-    admin_id: string;
+    admin_id?: string;
     user_id: string;
     text: string;
 }
@@ -20,3 +20,5 @@ class MessagesService {
         return message
     }
 }
+
+export { MessagesService }
